@@ -10,6 +10,7 @@ const EventForm = ({state, dispatch}) => {
   const [body, setBody] = useState('')
 
   const addEvent = e => {
+    console.log("はじめ")
     e.preventDefault()
 
     dispatch({
