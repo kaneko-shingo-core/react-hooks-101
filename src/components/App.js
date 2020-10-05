@@ -10,13 +10,13 @@ import reducer from '../reducers'
 
 const App = () => {
   const [state, dispatch] = useReducer(reducer, [])
-
+  console.log(state)
   return (
     <div className="container-fluid">
       <EventForm state={state} dispatch={dispatch}/>
+
       <Events state={state} dispatch={dispatch}/>
     </div>
   )
 }
-
 export default App
